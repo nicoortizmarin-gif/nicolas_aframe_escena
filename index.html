@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa A-Frame</title>
+
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+
+  <!-- Animaciones -->
+  <script src="https://cdn.jsdelivr.net/gh/ngokevin/aframe-extras@7.5.0/dist/aframe-extras.min.js"></script>
+
+
+</head>
+
+<body>
+
+<a-scene>
+
+  <!-- ================================================= -->
+  <!--                    CIELO                          -->
+  <!-- ================================================= -->
+
+  <a-sky color="#4DB8FF"></a-sky>
+
+
+  <!-- ================================================= -->
+  <!--                    SUELO                          -->
+  <!-- ================================================= -->
+
+  <a-plane
+    position="0 0 0"
+    rotation="-90 0 0"
+    width="30"
+    height="30"
+    color="#65A844">
+  </a-plane>
+
+
+  <!-- ================================================= -->
+  <!--                    LUCES                          -->
+  <!-- ================================================= -->
+
+  <a-light
+    type="ambient"
+    color="#FFFFFF"
+    intensity="1.5">
+  </a-light>
+
+  <a-light
+    type="directional"
+    position="-5 10 8"
+    intensity="2">
+  </a-light>
+
+
+  <!-- ================================================= -->
+  <!--                    CASA                           -->
+  <!-- ================================================= -->
+
+  <!-- PARED TRASERA -->
+  <a-box
+    position="0 2 -3"
+    width="6"
+    height="4"
+    depth="0.3"
+    color="#F0C98D">
+  </a-box>
+
+
+  <!-- PARED IZQUIERDA -->
+  <a-box
+    position="-3 2 0"
+    width="0.3"
+    height="4"
+    depth="6"
+    color="#E7B978">
+  </a-box>
+
+
+  <!-- PARED DERECHA -->
+  <a-box
+    position="3 2 0"
+    width="0.3"
+    height="4"
+    depth="6"
+    color="#E7B978">
+  </a-box>
+
+
+ ```html
+<!-- ================================================= -->
+<!--                 EDIFICIO MODERNO                  -->
+<!-- ================================================= -->
+
+<a-entity id="edificio">
+
+  <!-- =============================================== -->
+  <!--              ESTRUCTURA PRINCIPAL               -->
+  <!-- =============================================== -->
+
+  <!-- Piso 1 -->
+  <a-box
+    position="0 1.5 0"
+    width="6"
+    height="3"
+    depth="5"
+    color="#777777">
+  </a-box>
+
+  <!-- Piso 2 -->
+  <a-box
+    position="0 4.5 0"
+    width="6"
+    height="3"
+    depth="5"
+    color="#666666">
+  </a-box>
+
+  <!-- Piso 3 -->
+  <a-box
+    position="0 7.5 0"
+    width="6"
+    height="3"
+    depth="5"
+    color="#555555">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!--                    VENTANAS                      -->
+  <!-- =============================================== -->
+
+  <!-- ---------- PISO 1 ---------- -->
+
+  <a-box
+    position="-1.8 1.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#55C7E8">
+  </a-box>
+
+  <a-box
+    position="0 1.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#55C7E8">
+  </a-box>
+
+  <a-box
+    position="1.8 1.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#55C7E8">
+  </a-box>
+
+
+  <!-- ---------- PISO 2 ---------- -->
+
+  <a-box
+    position="-1.8 4.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#63D0ED">
+  </a-box>
+
+  <a-box
+    position="0 4.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#63D0ED">
+  </a-box>
+
+  <a-box
+    position="1.8 4.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#63D0ED">
+  </a-box>
+
+
+  <!-- ---------- PISO 3 ---------- -->
+
+  <a-box
+    position="-1.8 7.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#71D7EF">
+  </a-box>
+
+  <a-box
+    position="0 7.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#71D7EF">
+  </a-box>
+
+  <a-box
+    position="1.8 7.7 2.55"
+    width="1.4"
+    height="1.8"
+    depth="0.08"
+    color="#71D7EF">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!--                MARCOS VERTICALES                 -->
+  <!-- =============================================== -->
+
+  <a-box
+    position="-0.9 1.7 2.6"
+    width="0.08"
+    height="2"
+    depth="0.1"
+    color="#222222">
+  </a-box>
+
+  <a-box
+    position="0.9 1.7 2.6"
+    width="0.08"
+    height="2"
+    depth="0.1"
+    color="#222222">
+  </a-box>
+
+  <a-box
+    position="-0.9 4.7 2.6"
+    width="0.08"
+    height="2"
+    depth="0.1"
+    color="#222222">
+  </a-box>
+
+  <a-box
+    position="0.9 4.7 2.6"
+    width="0.08"
+    height="2"
+    depth="0.1"
+    color="#222222">
+  </a-box>
+
+  <a-box
+    position="-0.9 7.7 2.6"
+    width="0.08"
+    height="2"
+    depth="0.1"
+    color="#222222">
+  </a-box>
+
+  <a-box
+    position="0.9 7.7 2.6"
+    width="0.08"
+    height="2"
+    depth="0.1"
+    color="#222222">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!--                  ENTRADA                         -->
+  <!-- =============================================== -->
+
+  <!-- Marco de entrada -->
+  <a-box
+    position="0 1.25 2.65"
+    width="1.5"
+    height="2.5"
+    depth="0.2"
+    color="#222222">
+  </a-box>
+
+  <!-- Puerta de vidrio -->
+  <a-box
+    position="0 1.25 2.76"
+    width="1.2"
+    height="2.3"
+    depth="0.05"
+    color="#72D9F5">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!--                PARTE SUPERIOR                    -->
+  <!-- =============================================== -->
+
+  <!-- Cornisa -->
+  <a-box
+    position="0 9.1 0"
+    width="6.4"
+    height="0.3"
+    depth="5.4"
+    color="#333333">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!--                 LATERALES                        -->
+  <!-- =============================================== -->
+
+  <!-- Lateral izquierdo -->
+  <a-box
+    position="-3.05 4.5 0"
+    width="0.15"
+    height="9"
+    depth="5.1"
+    color="#333333">
+  </a-box>
+
+  <!-- Lateral derecho -->
+  <a-box
+    position="3.05 4.5 0"
+    width="0.15"
+    height="9"
+    depth="5.1"
+    color="#333333">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!--                 LETRERO                          -->
+  <!-- =============================================== -->
+
+  <a-text
+    value="METROPOLIS"
+    position="0 8.8 2.72"
+    align="center"
+    width="5"
+    color="#FFFFFF">
+  </a-text>
+
+
+  <!-- =============================================== -->
+  <!--              JARDINERAS                         -->
+  <!-- =============================================== -->
+
+  <a-box
+    position="-2.2 0.35 3.5"
+    width="1.5"
+    height="0.7"
+    depth="0.8"
+    color="#444444">
+  </a-box>
+
+  <a-cylinder
+    position="-2.2 1 3.5"
+    radius="0.45"
+    height="1.3"
+    color="#2E8B57">
+  </a-cylinder>
+
+
+  <a-box
+    position="2.2 0.35 3.5"
+    width="1.5"
+    height="0.7"
+    depth="0.8"
+    color="#444444">
+  </a-box>
+
+  <a-cylinder
+    position="2.2 1 3.5"
+    radius="0.45"
+    height="1.3"
+    color="#2E8B57">
+  </a-cylinder>
+
+</a-entity>
+```
+
+
+
+  <!-- ================================================= -->
+  <!--                     CAMINO                         -->
+  <!-- ================================================= -->
+
+  <a-box
+    position="0 0.03 5"
+    width="1.8"
+    height="0.05"
+    depth="4"
+    color="#B5A58A">
+  </a-box>
+
+
+  <!-- ================================================= -->
+  <!--                       OVNI                         -->
+  <!-- ================================================= -->
+
+  <a-entity
+    id="ovni"
+    position="-12 8 -5"
+    animation="
+      property: position;
+      from: -12 8 -5;
+      to: 12 9 -5;
+      dur: 7000;
+      easing: easeInOutSine;
+      loop: true;
+      dir: alternate
+    ">
+
+    <!-- Cuerpo principal -->
+    <a-sphere
+      position="0 0 0"
+      scale="2 0.45 2"
+      color="#777777">
+    </a-sphere>
+
+
+    <!-- Parte superior -->
+    <a-sphere
+      position="0 0.25 0"
+      scale="0.8 0.35 0.8"
+      color="#9EDFFF">
+    </a-sphere>
+
+
+    <!-- Anillo luminoso -->
+    <a-torus
+      position="0 -0.05 0"
+      rotation="0 0 0"
+      radius="1.35"
+      radius-tubular="0.12"
+      color="#00FFFF">
+    </a-torus>
+
+
+    <!-- Luces inferiores -->
+
+    <a-sphere
+      position="-0.9 -0.35 0"
+      radius="0.15"
+      color="#FFFF00"
+      light="type: point; intensity: 1; distance: 5">
+    </a-sphere>
+
+    <a-sphere
+      position="0 -0.4 0"
+      radius="0.15"
+      color="#FFFF00"
+      light="type: point; intensity: 1; distance: 5">
+    </a-sphere>
+
+    <a-sphere
+      position="0.9 -0.35 0"
+      radius="0.15"
+      color="#FFFF00"
+      light="type: point; intensity: 1; distance: 5">
+    </a-sphere>
+
+  </a-entity>
+
+
+  <!-- ================================================= -->
+  <!--                     CÁMARA                        -->
+  <!-- ================================================= -->
+
+  <a-camera
+    position="0 3.2 12"
+    look-controls="enabled: true">
+  </a-camera>
+
+  ```html
+<!-- ================================================= -->
+<!--                CARRO ANIMADO                      -->
+<!-- ================================================= -->
+
+<a-entity
+  id="carro"
+  position="-8 0.55 6"
+  rotation="0 90 0"
+
+  animation__1="
+    property: position;
+    to: 8 0.55 6;
+    dur: 5000;
+    easing: linear;
+    startEvents: comenzar;
+  "
+
+  animation__2="
+    property: rotation;
+    to: 0 -90 0;
+    dur: 1;
+    startEvents: girar1;
+  "
+>
+
+  <!-- CUERPO DEL CARRO -->
+  <a-box
+    position="0 0.35 0"
+    width="2.2"
+    height="0.6"
+    depth="1.1"
+    color="#D62828">
+  </a-box>
+
+  <!-- PARTE SUPERIOR -->
+  <a-box
+    position="0 0.8 0"
+    width="1.2"
+    height="0.5"
+    depth="0.95"
+    color="#B51E1E">
+  </a-box>
+
+  <!-- PARABRISAS -->
+  <a-box
+    position="0 0.82 -0.49"
+    width="0.9"
+    height="0.35"
+    depth="0.03"
+    color="#6ED6FF">
+  </a-box>
+
+  <!-- RUEDA DELANTERA IZQUIERDA -->
+  <a-cylinder
+    position="0.7 0.1 -0.6"
+    rotation="90 0 0"
+    radius="0.3"
+    height="0.18"
+    color="#222222">
+  </a-cylinder>
+
+  <!-- RUEDA DELANTERA DERECHA -->
+  <a-cylinder
+    position="0.7 0.1 0.6"
+    rotation="90 0 0"
+    radius="0.3"
+    height="0.18"
+    color="#222222">
+  </a-cylinder>
+
+  <!-- RUEDA TRASERA IZQUIERDA -->
+  <a-cylinder
+    position="-0.7 0.1 -0.6"
+    rotation="90 0 0"
+    radius="0.3"
+    height="0.18"
+    color="#222222">
+  </a-cylinder>
+
+  <!-- RUEDA TRASERA DERECHA -->
+  <a-cylinder
+    position="-0.7 0.1 0.6"
+    rotation="90 0 0"
+    radius="0.3"
+    height="0.18"
+    color="#222222">
+  </a-cylinder>
+
+  <!-- FAROS -->
+  <a-sphere
+    position="1.12 0.38 -0.3"
+    radius="0.12"
+    color="#FFFF00">
+  </a-sphere>
+
+  <a-sphere
+    position="1.12 0.38 0.3"
+    radius="0.12"
+    color="#FFFF00">
+  </a-sphere>
+
+</a-entity>
+
+
+<!-- ================================================= -->
+<!--             RECORRIDO DEL CARRO                   -->
+<!-- ================================================= -->
+
+<a-entity
+  id="rutaCarro"
+
+  animation__frente="
+    property: rotation;
+    to: 0 180 0;
+    dur: 1;
+    startEvents: vuelta1;
+  "
+>
+
+</a-entity>
+
+
+<!-- ================================================= -->
+<!--          ANIMACIÓN CONTINUA                       -->
+<!-- ================================================= -->
+
+<script>
+
+const carro = document.querySelector('#carro');
+
+let paso = 0;
+
+function moverCarro() {
+
+  if (paso === 0) {
+
+    carro.setAttribute('animation__movimiento', {
+      property: 'position',
+      to: '8 0.55 6',
+      dur: 5000,
+      easing: 'linear'
+    });
+
+    carro.setAttribute('animation__giro', {
+      property: 'rotation',
+      to: '0 180 0',
+      dur: 500
+    });
+
+    paso = 1;
+
+  } else if (paso === 1) {
+
+    carro.setAttribute('animation__movimiento', {
+      property: 'position',
+      to: '8 0.55 -6',
+      dur: 5000,
+      easing: 'linear'
+    });
+
+    carro.setAttribute('animation__giro', {
+      property: 'rotation',
+      to: '0 270 0',
+      dur: 500
+    });
+
+    paso = 2;
+
+  } else if (paso === 2) {
+
+    carro.setAttribute('animation__movimiento', {
+      property: 'position',
+      to: '-8 0.55 -6',
+      dur: 5000,
+      easing: 'linear'
+    });
+
+    carro.setAttribute('animation__giro', {
+      property: 'rotation',
+      to: '0 360 0',
+      dur: 500
+    });
+
+    paso = 3;
+
+  } else {
+
+    carro.setAttribute('animation__movimiento', {
+      property: 'position',
+      to: '-8 0.55 6',
+      dur: 5000,
+      easing: 'linear'
+    });
+
+    carro.setAttribute('animation__giro', {
+      property: 'rotation',
+      to: '0 90 0',
+      dur: 500
+    });
+
+    paso = 0;
+  }
+
+  carro.addEventListener('animationcomplete__movimiento', moverCarro, {
+    once: true
+  });
+}
+
+moverCarro();
+
+</script>
+```
+```html id="r5c8k2"
+<!-- ================================================= -->
+<!--                REJA PERIMETRAL                    -->
+<!-- ================================================= -->
+
+<a-entity id="reja">
+
+  <!-- =============================================== -->
+  <!-- REJA FRONTAL                                    -->
+  <!-- =============================================== -->
+
+  <a-box
+    position="0 1.2 9"
+    width="20"
+    height="2.4"
+    depth="0.15"
+    color="#333333"
+    opacity="0.85">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!-- REJA TRASERA                                    -->
+  <!-- =============================================== -->
+
+  <a-box
+    position="0 1.2 -9"
+    width="20"
+    height="2.4"
+    depth="0.15"
+    color="#333333"
+    opacity="0.85">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!-- REJA IZQUIERDA                                  -->
+  <!-- =============================================== -->
+
+  <a-box
+    position="-10 1.2 0"
+    width="0.15"
+    height="2.4"
+    depth="18"
+    color="#333333"
+    opacity="0.85">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!-- REJA DERECHA                                    -->
+  <!-- =============================================== -->
+
+  <a-box
+    position="10 1.2 0"
+    width="0.15"
+    height="2.4"
+    depth="18"
+    color="#333333"
+    opacity="0.85">
+  </a-box>
+
+
+  <!-- =============================================== -->
+  <!-- POSTES                                          -->
+  <!-- =============================================== -->
+
+  <!-- Frente -->
+  <a-cylinder position="-8 1.2 9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+  <a-cylinder position="-4 1.2 9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+  <a-cylinder position="0 1.2 9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+  <a-cylinder position="4 1.2 9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+  <a-cylinder position="8 1.2 9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+
+  <!-- Atrás -->
+  <a-cylinder position="-8 1.2 -9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+  <a-cylinder position="-4 1.2 -9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+  <a-cylinder position="0 1.2 -9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+  <a-cylinder position="4 1.2 -9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+  <a-cylinder position="8 1.2 -9" radius="0.12" height="2.4" color="#222222"></a-cylinder>
+
+</a-entity>
+```
+
+
+</a-scene>
+
+</body>
+</html>
